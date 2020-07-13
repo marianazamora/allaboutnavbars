@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
 	<!--Stylesheets and icons-->
-	<link rel="stylesheet" type="text/css" href="css/styletop.css">
+	<link rel="stylesheet" type="text/css" href="css/stylepill.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Website title-->
 	<title>All About Nav Bars</title>
@@ -31,9 +31,9 @@
 		<!--Main Content Container-->
 		<main class="maincontainer">
 			<div class="infocontainer">
-				<h1>Top Bar</h1>
-				<div class="examplenav">
-					<a href="#">Home</a>
+				<h1>Pill Bar</h1>
+				<div class="pillnav">
+					<a class="active" href="#">Home</a>
 					<a href="#">News</a>
 					<a href="#">Cont</a>
 					<a href="#">About</a>
@@ -41,51 +41,52 @@
 			</div>
 			<div class="textcontainer">
 				<div class="movingbuttons">
-					<a href="icon.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
-					<a href="pill.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
+					<a href="top.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
+					<a href="input.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
 				</div>
 				<div class="card">
-					<h3>Classic. Useful.</h3>
-					<p> The classic top bar is always useful to organize the pages of a website.</p>
+					<h3>Nice. Clear.</h3>
+					<p> Alternative to the top navigation bar, the pill bar is simple yet nice looking. Using the class active we are able to highlight the page the user is currently visiting.</p>
 				</div>
 				<div class="card">
 					<h3>Tutorial</h3>
 					<p> The code is original from w3schools with couple of adjustments. It's a combination of HTML and CSS, no need for Javascript.</p>
 					
 					<h4>HTML</h4>
-					<p>1. Use &lt;div&gt; or &lt;nav&gt; to hold your navigation bar. Add a class to that element which we will use later to style.</p>
+					<p>1. Use &lt;div&gt; or &lt;nav&gt; to hold your navigation bar. Add a class to that element which we will use later to style. In this case we will use the class "active" to style the website that is currently being visited.</p>
 					<p>Code Example:</p>
 					<code>
-						&lt;div class="topnav"&gt;
-						<br>&lt;a href="#"&gt;Home&lt;/a&gt;
+						&lt;div class="pillnav"&gt;
+						<br>&lt;a class="active" href="#"&gt;Home&lt;/a&gt;
 						<br>&lt;a href="#"&gt;News&lt;/a&gt;
-						<br>&lt;a href="#"&gt;Contact&lt;/a&gt;
+						<br>&lt;a href="#"&gt;Cont&lt;/a&gt;
 						<br>&lt;a href="#"&gt;About&lt;/a&gt;
 						<br>&lt;/div&gt;
 					</code>
 					
 					<h4>CSS</h4>
-					<p>1. Time to style the code. Use the class from the HTML code to add styling. In this case we used the class "topnav".</p>
+					<p>1. Time to style the code. Use the class from the HTML code to add styling. In this case we used the class "pillnav".</p>
 					<p>Code Example:</p>
 					<code>
-						.topnav {
-  						<br>background-color: black;
-  						<br>overflow: hidden;}
-  						<br>.topnav a {
-  						<br>float: left;
-  						<br>color: white;
+						.pillnav a {
+  						<br>display: inline-block;
+  						<br>color: black;
   						<br>text-align: center;
   						<br>padding: 1em 1em;
   						<br>text-decoration: none;
-  						<br>font-size: 1em;}
-  						<br>.topnav a:hover {
+  						<br>font-size: 1em;
+  						<br>border-radius: 5px;}
+  						<br>.pillnav a:hover {
   						<br>background-color: #ddd;
   						<br>color: black;}
+  						<br>.pillnav a.active{
+  						<br>background-color:#00BFA6;
+  						<br>color:white;}
 					</code>
 				</div>
 				<div class="movingbuttons">
-					<a href="icon.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
-					<a href="pill.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
+					<a href="top.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
+					<a href="input.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</main>
