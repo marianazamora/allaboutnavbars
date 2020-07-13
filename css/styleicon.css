@@ -46,74 +46,87 @@ nav a:hover,
 .brandnav{
 	font-weight: bold;
 }
-
 .brandnav a:hover{
 	background:#2c2f33;
 	color:white;
 }
+
 /*-----Main Content styles-----*/
 .maincontainer{
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
 }
 
-/*-----First Panel Container styles-----*/
-.firstcontainer{
+.infocontainer{
 	display:flex;
-	flex-direction:row;
-	justify-content: center;
-	padding: 5em;
-	height:auto;
-}
-.imagecontainer{
-	display:block;
-	width: 50%;
-}
-.imagecontainer img{
-	max-width: 100%;
-  	margin:1em;
-}
-.textcontainer{
-	display:block;
-	width: 25%;
-	padding:1em;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width:70%;
 	margin:1em;
+	padding:1em;
 }
 
-.textcontainer a,
-.card a{
-	background-color:#00BFA6;
+.textcontainer{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background: #00BFA6;
+	width:100%;
+	padding:1em;
+}
+.movingbuttons{
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+	align-content: center;
+	width:60%;
+}
+.movingbuttons a{
+	background-color:#2c2f33;
 	color:white;
 	border-radius:1vw;
 	padding:1em;
+	margin:.5em;
 	border:none;
 	font-size: 1.2vw;
 	display:block;
 	text-decoration: none;
-	width:50%;
+	width:25%;
 	text-align: center;
 }
 
-.textcontents{
-	width:100% ;
-}
-
-/*-----Second Panel Container styles-----*/
-.optionscontainer{
-	background-color: #00BFA6;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 4em;
-}
 .card{
 	background: white;
 	margin:1em;
 	padding: 2em;
-	width:25%;
+	width:60%;
 	color:black;
-	border-radius: 15px;
+	border-radius: 10px;
+}
+
+/*----Icon Bar style-----*/
+.icon-bar {
+  width: 85%;
+  background-color: #00BFA6;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.icon-bar a {
+  float: left; 
+  text-align: center;
+  width: 20%;
+  padding: .6em 0;
+  transition: all 0.3s ease;
+  color: white; 
+  font-size: 2vw;
+}
+
+.icon-bar a:hover {
+  background-color: #2c2f33;
 }
 
 /*-----Footer styles-----*/
@@ -130,62 +143,32 @@ nav a:hover,
 	nav{
 		font-size: 5vw;
 	}
-	.maincontainer,
-	.firstcontainer{
+	.maincontainer{
 		display:flex;
 		flex-direction: column;
 	  	flex-wrap: wrap;
 	  	align-content: center;
 	  	padding:0;
-	}
-
-	.firstcontainer{
-		padding: 1em;
-		margin: 1em;
-	}
-	.textcontainer{
-		display:flex;
-		justify-content: center;
-		width:95%;
-		font-size:4vw;
-	}
-	.textcontents{
-		width: 70%;
-	}
-
-	.imagecontainer{
-		display:flex;
-		justify-content: center;
-		align-content: center;
-		width: 105%;
-}
-	.imagecontainer img{
-		width: 70%;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.optionscontainer{
-		display:flex;
-		flex-direction: column;
-	  	flex-wrap: wrap;
-	  	align-content: center;
-	  	padding:0;
-	}
-
-	.card{
-		width: 50%;
-		margin:2em;
-		font-size:4vw;
-	}
-
-	.textcontainer a,
-	.card a{
-		font-size: 4vw;
 	}
 	.footercontainer{
 		padding:0;
 		font-size: 4vw;
 
+	}
+	.infocontainer h1{
+		font-size:7vw;
+	}
+	.icon-bar a {
+	  font-size: 5vw;
+	}
+	.card{
+		font-size:4vw;
+	}
+	.movingbuttons{
+		width:80%;
+	}
+	.movingbuttons a{
+		font-size: 4vw;
+		width:50%;
 	}
 }

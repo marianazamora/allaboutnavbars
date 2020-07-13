@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Required Meta Data-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<!--Stylesheets and icons-->
+	<link rel="stylesheet" type="text/css" href="css/styletop.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Website title-->
+	<title>All About Nav Bars</title>
+</head>
+<body>
+	<!--Body Container-->
+	<div class="bodycontainer">
+		<!--Navigation Bar Container-->
+		<header class="navcontainer">
+			<nav class="topnav"> 
+				<div class="brandnav">
+					<a href="index.html">AllAboutNavBars</a>
+				</div>
+				<div id="myLinks">
+					<a href="icon.html">Icon Bar</a>
+					<a href="top.html">Top Bar</a>
+					<a href="pill.html">Pill Bar</a>
+					<a href="input.html">Input Bar</a>
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="popnavigation()"><i class="fa fa-bars"></i></a>
+			</nav>
+		</header>
+		<!--Main Content Container-->
+		<main class="maincontainer">
+			<div class="infocontainer">
+				<h1>Top Bar</h1>
+				<div class="examplenav">
+					<a href="#">Home</a>
+					<a href="#">News</a>
+					<a href="#">Cont</a>
+					<a href="#">About</a>
+				</div>
+			</div>
+			<div class="textcontainer">
+				<div class="movingbuttons">
+					<a href="icon.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
+					<a href="pill.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
+				</div>
+				<div class="card">
+					<h3>Classic. Useful.</h3>
+					<p> The classic top bar is always useful to organize the pages of a website.</p>
+				</div>
+				<div class="card">
+					<h3>Tutorial</h3>
+					<p> The code is original from w3schools with couple of adjustments. It's a combination of HTML and CSS, no need for Javascript.</p>
+					
+					<h4>HTML</h4>
+					<p>1. Use &lt;div&gt; or &lt;nav&gt; to hold your navigation bar. Add a class to that element which we will use later to style.</p>
+					<p>Code Example:</p>
+					<code>
+						&lt;div class="topnav"&gt;
+						<br>&lt;a href="#"&gt;Home&lt;/a&gt;
+						<br>&lt;a href="#"&gt;News&lt;/a&gt;
+						<br>&lt;a href="#"&gt;Contact&lt;/a&gt;
+						<br>&lt;a href="#"&gt;About&lt;/a&gt;
+						<br>&lt;/div&gt;
+					</code>
+					
+					<h4>CSS</h4>
+					<p>1. Time to style the code. Use the class from the HTML code to add styling. In this case we used the class "topnav".</p>
+					<p>Code Example:</p>
+					<code>
+						.topnav {
+  						<br>background-color: black;
+  						<br>overflow: hidden;}
+  						<br>.topnav a {
+  						<br>float: left;
+  						<br>color: white;
+  						<br>text-align: center;
+  						<br>padding: 1em 1em;
+  						<br>text-decoration: none;
+  						<br>font-size: 1em;}
+  						<br>.topnav a:hover {
+  						<br>background-color: #ddd;
+  						<br>color: black;}
+					</code>
+				</div>
+				<div class="movingbuttons">
+					<a href="index.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Home</a>
+					<a href="top.html">Next <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</main>
+		<!--Footer-->
+		<footer class="footercontainer">
+			<p>Created by Mariana Perez</p>
+		</footer>
+	</div>
+	<!--Javascript for navigation bar-->
+	<script src="js/javascript.js"></script>
+</body>
+</html>
