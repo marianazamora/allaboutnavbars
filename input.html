@@ -31,12 +31,17 @@
 		<!--Main Content Container-->
 		<main class="maincontainer">
 			<div class="infocontainer">
-				<h1>Pill Bar</h1>
-				<div class="pillnav">
+				<h1>Input Bar</h1>
+				<div class="inputnav">
 					<a class="active" href="#">Home</a>
 					<a href="#">News</a>
 					<a href="#">Cont</a>
-					<a href="#">About</a>
+					<div class="search-container">
+						<form action="">
+	      				<input type="text" placeholder="Search.." name="search">
+	      				<button type="submit"><i class="fa fa-search"></i></button>
+	    				</form>
+    				</div>
 				</div>
 			</div>
 			<div class="textcontainer">
@@ -45,44 +50,83 @@
 					<a href="index.html">Home <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
 				</div>
 				<div class="card">
-					<h3>Nice. Clear.</h3>
-					<p> Alternative to the top navigation bar, the pill bar is simple yet nice looking. Using the class active we are able to highlight the page the user is currently visiting.</p>
+					<h3>Useful. Classic. </h3>
+					<p> Now that you know how to make a simple top navigation bar, you can start adding input fields such as search, user or password input.</p>
 				</div>
 				<div class="card">
 					<h3>Tutorial</h3>
-					<p> The code is original from <a href="https://www.w3schools.com/howto/howto_css_searchbar.asp">w3schools</a> with couple of adjustments. It's a combination of HTML and CSS, no need for Javascript.</p>
+					<p> The code is original from <a href="https://www.w3schools.com/howto/howto_css_searchbar.asp">w3schools</a> with couple of adjustments. It's a combination of HTML and CSS. For the search bar you will start learning about forms and input fields in Javascript. In this tutorial we will just review the HTML and CSS code. You can learn more about Javascript input fields <a href="https://www.w3schools.com/js/js_input_examples.asp">here</a> and about <a href="https://www.w3schools.com/html/html_forms.asp">HTML forms here.</a></p>
 					
 					<h4>HTML</h4>
 					<p>1. Use &lt;div&gt; or &lt;nav&gt; to hold your navigation bar. Add a class to that element which we will use later to style. In this case we will use the class "active" to style the website that is currently being visited.</p>
+					<p>2. In this case we will use &lt;form&gt; and &lt;input&gt; to create the text box for the search input. Remember to use 'type="text"' to inform the input that the user will answer with text. You can also use "username", "password", "number" between others. 
 					<p>Code Example:</p>
 					<code>
-						&lt;div class="pillnav"&gt;
+						&lt;div class="inputnav"&gt;
 						<br>&lt;a class="active" href="#"&gt;Home&lt;/a&gt;
 						<br>&lt;a href="#"&gt;News&lt;/a&gt;
 						<br>&lt;a href="#"&gt;Cont&lt;/a&gt;
-						<br>&lt;a href="#"&gt;About&lt;/a&gt;
+						<br>&lt;div class="search-container"&gt;
+						<br>&lt;form action=""&gt;
+						<br>&lt;input type="text" placeholder="Search.." name="search"&gt;
+						<br>&lt;button type="submit"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+						<br>&lt;/form&gt;
+						<br>&lt;/div&gt;
 						<br>&lt;/div&gt;
 					</code>
+					<p>NOTE: In the form element you will find the attribute "action", this attribute is used to inform the form the location where the data will be stored. For this tutorial I'll keep it empty, however once you learn javascript fill it out to make the form work corretly.</p>
 					
 					<h4>CSS</h4>
 					<p>1. Time to style the code. Use the class from the HTML code to add styling. In this case we used the class "pillnav".</p>
 					<p>Code Example:</p>
 					<code>
-						.pillnav a {
-  						<br>display: inline-block;
-  						<br>color: black;
+						.inputnav {
+						<br>overflow: hidden;
+						<br>background-color: #00BFA6;
+						<br>border-radius: 10px;
+						<br>width: 85%;}
+						<br>
+						<br>.inputnav a {
+  						<br>float: left;
+  						<br>color: white;
   						<br>text-align: center;
-  						<br>padding: 1em 1em;
+  						<br>padding:.6em 0;
   						<br>text-decoration: none;
-  						<br>font-size: 1em;
-  						<br>border-radius: 5px;}
-  						<br>.pillnav a:hover {
-  						<br>background-color: #ddd;
-  						<br>color: black;}
-  						<br>.pillnav a.active{
-  						<br>background-color:#00BFA6;
+  						<br>font-size: 1vw;
+  						<br>border-radius: 10px;}
+  						<br>
+  						<br>.inputnav a:hover {
+  						<br>background-color: #2c2f33;
+  						<br>color: white;;}
+  						<br>
+  						<br>.inputnav a.active{
+  						<br>background-color:#2c2f33;
   						<br>color:white;}
+  						<br>
+  						<br>.inputnav .search-container {
+  						<br>float: right;}
+  						<br>.inputnav input[type=text] {
+  						<br>padding: .3em;
+  						<br>margin-top: .6em;
+  						<br>font-size: 1.5vw;
+  						<br>border: none;
+  						<br>
+  						<br>.inputnav .search-container button {
+  						<br>float: right;
+  						<br>padding: .5em .5em;
+  						<br>margin-top: .67em;
+  						<br>margin-right: 1em;
+  						<br>background: #ddd;
+  						<br>font-size: 1.3vw;
+  						<br>border: none;}
+  						<br>
+  						<br>.inputnav .search-container {
+  						<br>button:hover 
+  						<br>background: #ccc;}
 					</code>
+
+					<h4>Javascript</h4>
+					<p>1. If the user presses the button, the data should be sent somewhere. Therefore it is important to write a script which make this actions happen.</p>
 				</div>
 				<div class="movingbuttons">
 					<a href="pill.html"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> Previous</a>
